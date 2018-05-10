@@ -54,7 +54,9 @@ interface bt0
 };
 ```
 Enable the module to load during boot by adding bluetooth_6lowpan and radvd to /etc/modules.
-
+```
+root@raspberrypi:/etc# nano modules
+```
 ```
 # /etc/modules: kernel modules to load at boot time.
 #
@@ -66,11 +68,11 @@ bluetooth_6lowpan
 radvd
 ```
 ```
-echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
-sudo echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
-ifconfig bt0 add 2001:db8::1/64
-sudo service radvd restart
-echo "connect 00:96:50:36:9f:1f 1" > /sys/kernel/debug/bluetooth/6lowpan_control
+root@raspberrypi:~# echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
+root@raspberrypi:~# sudo echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
+root@raspberrypi:~# ifconfig bt0 add 2001:db8::1/64
+root@raspberrypi:~# sudo service radvd restart
+root@raspberrypi:~# echo "connect 00:96:50:36:9f:1f 1" > /sys/kernel/debug/bluetooth/6lowpan_control
 ```
 
 ### MQTT Client - Publisher
