@@ -9,12 +9,12 @@ The aim of this project is to establih connection between desktop computer and n
 * Desktop Computer
 
 ### SW Requirements
-*nRF5 SDK v15.0.0
-*Latest version of Segger Embedded Studio
-*PuTTY
+* nRF5 SDK v15.0.0
+* Latest version of Segger Embedded Studio
+* PuTTY
 
 ### IDE/Toolchain Support
-*Segger Embedded Studio
+* Segger Embedded Studio
 
 ### Installing a 6LoWPAN enabled Linux kernel and required modules
 ```
