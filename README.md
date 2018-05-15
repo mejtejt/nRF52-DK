@@ -70,9 +70,10 @@ radvd
 ```
 root@raspberrypi:~# echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
 root@raspberrypi:~# sudo echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
-root@raspberrypi:~# ifconfig bt0 add 2001:db8::1/64
-root@raspberrypi:~# sudo service radvd restart
 root@raspberrypi:~# echo "connect 00:96:50:36:9f:1f 1" > /sys/kernel/debug/bluetooth/6lowpan_control
+root@raspberrypi:~# ifconfig bt0 add 2001:db8::1/64
+root@raspberrypi:~# sudo echo 2 > /proc/sys/net/ipv6/conf/bt0/accept_ra
+root@raspberrypi:~# sudo service radvd restart
 ```
 
 ### MQTT Client - Publisher
