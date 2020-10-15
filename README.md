@@ -1,6 +1,6 @@
 
 ### 6LoWPAN over Bluetooth low energy
-This example from [nRF5 SDK](http://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v15.x.x/) illustrates the use of Local network in communication with devices through IPV6.
+This example from [nRF5 SDK](http://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v15.x.x/) illustrates the use of the Local network in communication with devices through IPV6.
 The aim of this project is to establih connection between desktop computer and nRF52 DK over Raspberry Pi as a Linux border router.
 
 ### HW Requirements
